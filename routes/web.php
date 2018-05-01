@@ -14,3 +14,6 @@
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::get('/agent', 'AgentController@index');
+Route::get('/agent/{agent}', 'AgentController@show');
