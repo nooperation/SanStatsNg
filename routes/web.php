@@ -20,3 +20,5 @@ Route::get('/agent/{agent}', 'AgentController@show');
 
 Route::get('/experience', 'ExperienceController@index');
 Route::get('/experience/{experience}', 'ExperienceController@show');
+
+Route::get('/experience_history', 'ExperienceHistoryController@index');
