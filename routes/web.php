@@ -17,3 +17,6 @@ Route::get('/', function () {
 
 Route::get('/agent', 'AgentController@index');
 Route::get('/agent/{agent}', 'AgentController@show');
+
+Route::get('/experience', 'ExperienceController@index');
+Route::get('/experience/{experience}', 'ExperienceController@show');
