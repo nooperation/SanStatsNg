@@ -22,6 +22,7 @@ $factory->define(App\ExperienceHistory::class, function (Faker $faker) {
         'experience_created_at' => $parent->experience_created_at,
         'is_published' => $faker->boolean,
         'agent_id' => $parent->agent_id,
-        'experience_id' => $parent->id
+        'experience_id' => $parent->id,
+        'event_type_id' => factory(App\EventType::class)
     ];
 });

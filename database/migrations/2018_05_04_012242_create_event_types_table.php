@@ -4,7 +4,7 @@ use Illuminate\Support\Facades\Schema;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class CreateAgentHistoriesTable extends Migration
+class CreateEventTypesTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,13 +13,9 @@ class CreateAgentHistoriesTable extends Migration
      */
     public function up()
     {
-        Schema::create('agent_histories', function (Blueprint $table) {
+        Schema::create('event_types', function (Blueprint $table) {
             $table->increments('id');
-            $table->char('uuid', 36);
-            $table->char('handle', 64);
-            $table->char('name', 64);
-            $table->integer('agent_id');
-            $table->integer('event_type_id');
+            $table->string('name');
             $table->timestamps();
         });
     }
@@ -31,6 +27,6 @@ class CreateAgentHistoriesTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('agent_histories');
+        Schema::dropIfExists('event_types');
     }
 }

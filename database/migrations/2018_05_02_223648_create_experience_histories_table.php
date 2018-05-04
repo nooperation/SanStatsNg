@@ -32,6 +32,7 @@ class CreateExperienceHistoriesTable extends Migration
             $table->boolean('is_published');
             $table->integer('agent_id');
             $table->integer('experience_id');
+            $table->integer('event_type_id');
             $table->timestamps();
         });
     }
