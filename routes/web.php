@@ -22,3 +22,7 @@ Route::get('/experience', 'ExperienceController@index');
 Route::get('/experience/{experience}', 'ExperienceController@show');
 
 Route::get('/experience_history', 'ExperienceHistoryController@index');
+
+Route::get('/store_item', 'StoreItemController@index');
+
+Route::get('/store_item_status', 'StoreItemStatusController@index');
