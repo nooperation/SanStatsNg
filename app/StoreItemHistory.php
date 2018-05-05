@@ -13,7 +13,7 @@ class StoreItemHistory extends Model
 
     public function store_item()
     {
-        return $this->belongsTo(Experience::class);
+        return $this->belongsTo(StoreItem::class);
     }
 
     public function store_item_status()

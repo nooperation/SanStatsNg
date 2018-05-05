@@ -26,7 +26,6 @@ class CreateStoreItemsTable extends Migration
             $table->boolean('is_published');
             $table->integer('agent_id');
             $table->integer('store_item_status_id');
-            $table->integer('store_tag_map_id');
             $table->timestamps();
         });
     }

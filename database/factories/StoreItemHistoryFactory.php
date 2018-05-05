@@ -14,7 +14,6 @@ $factory->define(App\StoreItemHistory::class, function (Faker $faker) {
         'is_published' => $faker->boolean,
         'agent_id' => factory(App\Agent::class),
         'store_item_status_id' => factory(App\StoreItemStatus::class),
-        'store_tag_map_id' => 0,
         'event_type_id' => factory(App\EventType::class)
     ];
 });

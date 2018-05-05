@@ -26,7 +26,6 @@ class CreateStoreItemHistoriesTable extends Migration
             $table->integer('store_item_id');
             $table->integer('agent_id');
             $table->integer('store_item_status_id');
-            $table->integer('store_tag_map_id');
             $table->integer('event_type_id');
             $table->timestamps();
         });
