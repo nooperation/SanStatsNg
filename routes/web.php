@@ -25,4 +25,6 @@ Route::get('/experience_history', 'ExperienceHistoryController@index');
 
 Route::get('/store_item', 'StoreItemController@index');
 
+Route::get('/store_item_history', 'StoreItemHistoryController@index');
+
 Route::get('/store_item_status', 'StoreItemStatusController@index');

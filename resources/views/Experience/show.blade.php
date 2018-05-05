@@ -3,7 +3,7 @@
         <title>Experience Index</title>
     </head>
     <body>
-        <h1>Experience {{$agent->uuid}}</h1>
+        <h1>Experience {{$experience->uuid}}</h1>
         <table>
             <tr><td>uuid</td><td>{{ $experience->uuid }}</td></tr>
             <tr><td>name</td><td>{{ $experience->name }}</td></tr>

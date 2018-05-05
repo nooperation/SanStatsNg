@@ -14,9 +14,10 @@ class ExperienceController extends Controller
      */
     public function index()
     {
-        $experience = factory(Experience::class)->make();
+        factory(Experience::class)->create();
 
-        return $experience->agent;
+        $experiences = Experience::all();
+        return view('experience.index', compact('experiences'));
     }
 
     /**
