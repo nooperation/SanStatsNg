@@ -14,9 +14,16 @@ class CreateStoreItemTagMapsTable extends Migration
     public function up()
     {
         Schema::create('store_item_tag_maps', function (Blueprint $table) {
-            $table->increments('id');
-            $table->integer('store_item_tag_id');
-            $table->integer('store_item_id');
+            $table->unsignedInteger('store_item_tag_id')->index();
+            $table->foreign('store_item_tag_id')
+                  ->references('id')
+                  ->on('store_item_tags');
+
+            $table->unsignedInteger('store_item_id')->index();
+            $table->foreign('store_item_id')
+                  ->references('id')
+                  ->on('store_item');
+
             $table->timestamps();
         });
     }

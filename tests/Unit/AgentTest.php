@@ -17,7 +17,7 @@ class AgentTest extends TestCase
      *
      * @return void
      */
-    public function testExample()
+    public function testAgentCreation()
     {
         $first = factory(Agent::class)->create();
 
